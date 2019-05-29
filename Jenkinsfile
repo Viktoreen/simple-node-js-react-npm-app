@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Build install files') {
             steps {
-                bat 'npm run Build'
+                bat 'npm run build'
             }
         }
         stage('Test') {
