@@ -24,5 +24,10 @@ pipeline {
                 bat 'serve -s build'
             }
         }
+        stage('Eject') {
+            steps {
+                bat 'npm eject'
+            }
+        }
     }
 }
