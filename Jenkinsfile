@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Check lint') {
             steps {
-                bat 'npm lintme'
+                bat 'npm run lintme'
             }
         }
         stage('Build install') {
