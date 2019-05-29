@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing and testing again..'
+                bat 'npm run test -- --coverage'
             }
         }
         stage('Deploy') {
