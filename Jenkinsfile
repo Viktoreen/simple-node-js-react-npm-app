@@ -3,6 +3,11 @@ pipeline {
     tools {nodejs "node"}
 
     stages {
+        stage('Check lint') {
+            steps {
+                bat 'npm lintme'
+            }
+        }
         stage('Build install') {
             steps {
                 bat 'npm install'
