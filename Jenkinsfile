@@ -20,7 +20,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                bat 'npm install -g serve'
+                bat 'serve -s build'
             }
         }
     }
