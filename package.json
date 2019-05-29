@@ -12,6 +12,8 @@
     "build": "react-scripts build",
     "lintme": "echo 'Hello is it me you looking for...'",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "devEnt": "npm install && npm run build",
+    "serve": "npm i && npm run build && serve -s build"
   }
 }
